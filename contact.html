@@ -1,77 +1,113 @@
 <!doctype html>
 <html lang="en-us">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Jacquelyn Duley</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Courgette|Julius+Sans+One|Poiret+One|Raleway|Saira+Condensed"rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Advent+Pro|Comfortaa|Didact+Gothic
+  |Montserrat+Alternates|Poiret+One|Varela+Round|Yanone+Kaffeesatz" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
 </head>
+
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Jacquelyn Duley</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="https://jacquie04.github.io/Recipe-API/">Recipe API</a></li>
+    <li class="divider"></li>
+    <li><a href="https://blooming-caverns-21516.herokuapp.com/">Concert App</a></li>
+    <li class="divider"></li>
+    <li><a href="https://jacquie04.github.io/Train-Scheduler/">Train</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper teal accent-4">
+      <div id="nameLogo">
+        <a href="https://drive.google.com/file/d/1ebqZTaFokvxKUi3CupSDebcqrixolAdF/view?usp=sharing" class="brand-logo">Jacquelyn Duley</a>
+      </div>
+      <ul id="rightNav" class="right hide-on-med-and-down">
+        <li><a href="index.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" data-target="dropdown1">Apps
+            <i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
 
       <form id="contact-form">
 
-        <ul>
-          <li>
-            <div class="input-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" class="input-group-field"
-              pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" id="email" name="email"
-              placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
+          <div class="row">
+              <div class="input-field col s10">
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">First & Last Name</label>
+              </div>
+          <div class="row">
+              <div class="input-field col s10">
+                <input id="email" type="email" class="validate"required="required">
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="sorry, that was not an email address" data-success="valid email">Email Validation</span>
+              </div>
+            </div>
+          <div class="row">
+            <div class="input-field col s10">
+              <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+              <label for="textarea2">Message</label>
+            </div>
+          </div>
 
-          </li>
-        </ul>
-        <div class="input-group-button">
-          <input id="submit" class="button fire" type="submit">
-          <input id="clear" type="button" class="button" onclick="clearForm()" value="Clear Info">
-       
-        </div>
-        <br>
-        <h4 id='result'></h4>
+          <div class="input-group-button">
+              <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+                <a id="clear" class="waves-effect waves-light btn-small" onclick="clearForm()" value="Clear Info">Clear</a>
+            </div>
+      </form>
+  </div>
+ 
+  <br>
+  <h4 id='result'></h4>
   </div>
   </form>
- 
+
   </section>
 
   </div>
 
-  <footer>
-    <div class="container">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-linkedin"></i>
-      Copyright &copy;
-    </div>
-  </footer>
+  <footer class="page-footer teal accent-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Want More Information?</h5>
+            <p class="grey-text text-lighten-4">Click on the icons to view my LinkedIn and Github Profiles</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+            <a href="https://github.com/Jacquie04">
+              <span class="grey-text text-lighten-4"> <i class="fab fa-github"></i></span></a>
+            <a href="https://www.linkedin.com/in/jacquelyn-duley-996988174/">
+            <span class="grey-text text-lighten-4"><i class="fab fa-linkedin"></i></span></a>
+        © 2019 Copyright
+        <a class="grey-text text-lighten-4 right" href="https://drive.google.com/file/d/1ebqZTaFokvxKUi3CupSDebcqrixolAdF/view?usp=sharing">Click Here to View my Resume</a>
+        </div>
+      </div>
+    </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./assets/javascript/materialize.min.js"></script>
   <script src="./assets/javascript/app.js"></script>
 </body>
 
