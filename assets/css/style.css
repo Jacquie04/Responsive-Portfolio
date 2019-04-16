@@ -204,14 +204,14 @@ input[type=submit] {
   }
 
 .main-container {
-height: 700px;
+height: 800px;
 }
 
 footer {
   padding-bottom: 20px;
 }
 nav .nav-wrapper  {
-    height: 120px;
+    height: 160px;
     padding-right:10px;
   }
   .card {
@@ -222,6 +222,11 @@ nav .nav-wrapper  {
     margin-bottom:15px;
     float:left;
   }
+
+h2 {
+  flex-flow: wrap;
+  line-height: 60px;
+}
  
 }
 
