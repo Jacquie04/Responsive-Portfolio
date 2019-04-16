@@ -15,6 +15,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-container {
+  height: 400px;
+}
+
+.card-image {
+  float:left;
+  margin-top: 40px;
+  flex-flow: column;
+}
+
 .parallax-container {
   width:100% !important;
   height: 500px;
@@ -26,9 +36,12 @@ margin-top: 0%;
 
 .card {
   margin-top: 40px;
-  margin-left:200px;
-  width: 800px;
-  float:center;
+  flex-flow:column;
+  width: 500px;
+  height: 200px;
+  margin-bottom:50px;
+  margin-right: 200px;
+  float:right;
 }
 
 #bioImage {
@@ -81,8 +94,6 @@ h1 {
 
 /* footer */
 
-
-
 .fab {
   font-size: 30px;
 }
@@ -90,6 +101,8 @@ h1 {
 footer {
   margin-top: 200px;
 }
+
+
 
 h3, h2 {
   font-family: 'Didact Gothic', sans-serif;
@@ -110,7 +123,6 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  text-size-adjust: ;
   max-width: 960px;
   padding: 30px;
   margin: 0 0 40px;
