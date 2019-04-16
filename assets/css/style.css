@@ -17,6 +17,7 @@ body {
 
 
 
+
 .card-image {
   float:left;
   margin-top: 70px;
@@ -137,6 +138,14 @@ h3, h2 {
 
 /* contact page */
 
+#emailMe {
+color: lightseagreen;
+text-align: center;
+font-size: 18px;
+line-height: 30px;
+font-family: 'Didact Gothic', sans-serif;
+}
+
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -214,7 +223,7 @@ nav .nav-wrapper  {
     height: 160px;
     margin-bottom:5px;
   }
-  .card {
+.card {
     margin-top: 40px;
     margin-left: 40px;
     width: 300px;
@@ -228,8 +237,6 @@ h2 {
   line-height: 60px;
 }
 
-
- 
 }
 
 @media screen and (min-width : 900px) {

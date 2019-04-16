@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Jacquelyn Duley</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Abel|Advent+Pro|Comfortaa|Didact+Gothic
   |Montserrat+Alternates|Poiret+One|Varela+Round|Yanone+Kaffeesatz" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
@@ -29,7 +29,8 @@
   <nav>
     <div class="nav-wrapper teal accent-4">
       <div id="nameLogo">
-        <a href="https://drive.google.com/file/d/1ebqZTaFokvxKUi3CupSDebcqrixolAdF/view?usp=sharing" class="brand-logo">Contact Me</a>
+        <a href="https://drive.google.com/file/d/1ebqZTaFokvxKUi3CupSDebcqrixolAdF/view?usp=sharing"
+          class="brand-logo">Contact Me</a>
       </div>
       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="rightNav" class="right hide-on-med-and-down">
@@ -42,44 +43,49 @@
     </div>
   </nav>
 
-    <!-- side nav for mobile only-->
-    <ul id="slide-out" class="sidenav">
-        <li>
-          <div class="user-view">
-            <a href="#name"><span class="teal-text name">Jacquelyn Duley</span></a>
-            <a href="#email"><span class="teal-text email">jacquelynduley@gmail.com</span></a>
-          </div>
-        </li>
-        <li><a href="index.html">Go Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li>
-          <div class="divider"></div>
-        </li>
-        <li><a class="subheader">Apps</a></li>
-        <li><a class="waves-effect" href="https://jacquie04.github.io/Recipe-API/">Recipe API</a></li>
-        <li><a class="waves-effect" href="https://blooming-caverns-21516.herokuapp.com/">Concert App</a></li>
-        <li><a class="waves-effect" href="https://jacquie04.github.io/Train-Scheduler/">Train Scheduler</a></li>
-      </ul>
-      <!--end mobile nav-->
+  <!-- side nav for mobile only-->
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <a href="#name"><span class="teal-text name">Jacquelyn Duley</span></a>
+        <a href="#email"><span class="teal-text email">jacquelynduley@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="index.html">Go Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Apps</a></li>
+    <li><a class="waves-effect" href="https://jacquie04.github.io/Recipe-API/">Recipe API</a></li>
+    <li><a class="waves-effect" href="https://blooming-caverns-21516.herokuapp.com/">Concert App</a></li>
+    <li><a class="waves-effect" href="https://jacquie04.github.io/Train-Scheduler/">Train Scheduler</a></li>
+  </ul>
+  <!--end mobile nav-->
 
   <div id="main-container" class="container">
     <section class="main-section">
+      <div id="emailMe"> 
+      <p>You can email me directly at: jacquelynduley@gmail.com or leave your information and a message below!
+        </p>
+      </div>
       <h2>Contact</h2>
 
       <form id="contact-form">
 
+        <div class="row">
+          <div class="input-field col s10">
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First & Last Name</label>
+          </div>
           <div class="row">
-              <div class="input-field col s10">
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">First & Last Name</label>
-              </div>
-          <div class="row">
-              <div class="input-field col s10">
-                <input id="email" type="email" class="validate"required="required">
-                <label for="email">Email</label>
-                <span class="helper-text" data-error="sorry, that was not an email address" data-success="valid email">Email Validation</span>
-              </div>
+            <div class="input-field col s10">
+              <input id="email" type="email" class="validate" required="required">
+              <label for="email">Email</label>
+              <span class="helper-text" data-error="sorry, that was not an email address"
+                data-success="valid email">Email Validation</span>
             </div>
+          </div>
           <div class="row">
             <div class="input-field col s10">
               <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
@@ -88,14 +94,14 @@
           </div>
 
           <div class="input-group-button">
-              <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
-                  <i class="material-icons right">send</i>
-                </button>
-                <a id="clear" class="waves-effect waves-light btn-small" onclick="clearForm()" value="Clear Info">Clear</a>
-            </div>
+            <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+            <a id="clear" class="waves-effect waves-light btn-small" onclick="clearForm()" value="Clear Info">Clear</a>
+          </div>
       </form>
   </div>
- 
+
   <br>
   <h4 id='result'></h4>
   </div>
@@ -106,25 +112,27 @@
   </div>
 
   <footer class="page-footer teal accent-4">
-      <div id="contactFooter" class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Want More Information?</h5>
-            <p class="grey-text text-lighten-4">Click on the icons to view my LinkedIn and Github Profiles</p>
-          </div>
+    <div id="contactFooter" class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Want More Information?</h5>
+          <p class="grey-text text-lighten-4">Click on the icons to view my LinkedIn and Github Profiles</p>
         </div>
       </div>
-      <div class="footer-copyright">
-        <div class="container">
-            <a href="https://github.com/Jacquie04">
-              <span class="grey-text text-lighten-4"> <i class="fab fa-github"></i></span></a>
-            <a href="https://www.linkedin.com/in/jacquelyn-duley-996988174/">
-            <span class="grey-text text-lighten-4"><i class="fab fa-linkedin"></i></span></a>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <a href="https://github.com/Jacquie04">
+          <span class="grey-text text-lighten-4"> <i class="fab fa-github"></i></span></a>
+        <a href="https://www.linkedin.com/in/jacquelyn-duley-996988174/">
+          <span class="grey-text text-lighten-4"><i class="fab fa-linkedin"></i></span></a>
         © 2019 Copyright
-        <a class="grey-text text-lighten-4 right" href="https://drive.google.com/file/d/1ebqZTaFokvxKUi3CupSDebcqrixolAdF/view?usp=sharing">Click Here to View my Resume</a>
-        </div>
+        <a class="grey-text text-lighten-4 right"
+          href="https://drive.google.com/file/d/1ebqZTaFokvxKUi3CupSDebcqrixolAdF/view?usp=sharing">Click Here to View
+          my Resume</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./assets/javascript/materialize.min.js"></script>
