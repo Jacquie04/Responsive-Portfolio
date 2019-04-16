@@ -204,7 +204,7 @@ input[type=submit] {
   }
 
 .main-container {
-height: 800px;
+height: 700px;
 }
 
 footer {
@@ -228,9 +228,7 @@ h2 {
   line-height: 60px;
 }
 
-a .sidenav-trigger {
-  float:right;
-}
+
  
 }
 
